@@ -1,2 +1,2 @@
 # hotel-bookings
-Supervised ML project predicting if a booking will be canceled or not
+Supervised classification ML project predicting if a booking will be canceled or not
