@@ -55,11 +55,11 @@ The feature selection was not straightforward. Some features had to be eliminate
 Finished project. There are lots of things that could be improved, especially for the two areas mentioned under project flaws. However the main purpose of this project was to build a business use case incorporating a machine learning models predictions and in that regard I am very happy with the project. I've learned a lot and feel I have managed to get close to real world situations and experience. 
 
 # Conclusion
-General lessons
+#### General lessons
 1) Rushing the data-cleaning will come and bite you later on, almost certainly!
 2) Readability is important!
 
-Specific learnings for ML-model in a real world setting
+#### Specific learnings for ML-model in a real world setting
 1) What specific action will the models prediction lead to? And based on this, how will you evaluate model? 
 2) predict_proba thresholds can give you actionable predictions in cases where "original" predictions can't.
 
