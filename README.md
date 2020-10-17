@@ -7,7 +7,11 @@ Original data was 119k rows with 32 features. Data was messy, lots of duplicated
 Target variable was whether or not the booking was canceled. ~37% of all bookings were canceled in dataset
 
 # Summary
-Supervised classification ML project predicting if a booking will be canceled or not. In this project I was mainly focused on building a reasonable made up business use case incorporating predictions made by the model. The models "original" predictions were not useful in this made up business case, however if you only used predictions made by the model with 0.9 or higher probability score then the models predictions could be used as a key component in a profitable strategy. 
+Supervised classification ML project predicting if a booking will be canceled or not. In this project I was mainly focused on building a reasonable made up business use case incorporating predictions made by the model. Focusing on the business use case I had two major findings:
+
+1) The models "original" predictions were not useful in this made up business case, however if you only used predictions made by the model with 0.9 or higher probability score then the models predictions could be used as a key component in a profitable strategy. 
+
+2) The use case put contraints on what data could be used. With the framework I adopted I was only interested in the models performance on bookings that were cancelled less than 30 days before arrival. The 30 day limit is somewhat arbitrary but to give the reader a feel for the thought process behind this, think about the real would implications if we allow for all predictions made for bookings that were canceled, not taking the number of days before arrival into account.
 
 For more details about the business use case, please see the presentation available in the repo.
 
@@ -49,4 +53,13 @@ The feature selection was not straightforward. Some features had to be eliminate
 
 # Project status
 Finished project. There are lots of things that could be improved, especially for the two areas mentioned under project flaws. However the main purpose of this project was to build a business use case incorporating a machine learning models predictions and in that regard I am very happy with the project. I've learned a lot and feel I have managed to get close to real world situations and experience. 
+
+# Conclusion
+General lessons
+1) Rushing the data-cleaning will come and bite you later on, almost certainly!
+2) Readability is important!
+
+Specific learnings for ML-model in a real world setting
+1) What specific action will the models prediction lead to? And based on this, how will you evaluate model? 
+2) predict_proba thresholds can give you actionable predictions in cases where "original" predictions can't.
 
