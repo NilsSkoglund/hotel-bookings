@@ -60,6 +60,5 @@ Finished project. There are lots of things that could be improved, especially fo
 2) Readability is important!
 
 #### Specific learnings for ML-model in a real world setting
-1) What specific action will the models prediction lead to? And based on this, how will you evaluate model? 
+1) What specific action will the models prediction lead to? And based on this, how will you evaluate the model? 
 2) predict_proba thresholds can give you actionable predictions in cases where "original" predictions can't.
-
